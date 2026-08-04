@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+}
+
+div {
+  text-align: center;
+  color: white;
+}
+
+.title {
+  color: rgb(25, 102, 154);
+}
+
+img.ctrSet {
+  width: 400px;
+}
+
