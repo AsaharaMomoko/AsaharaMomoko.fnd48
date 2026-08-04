@@ -1,9 +1,4 @@
 "use strict";
-// 1行目に記載している "use strict" は削除しないでください
-
-// 今後意識したいこと
-//　✨🪴 学んだ技術に興味を持って、応用・活用していく！ 🌺✨
-
 
 let clickCount = 0;
 const answerArray = [];
@@ -64,7 +59,7 @@ function buttonClickB() {
 
 function ctrSetImage() {
   let addNum = Number(ctrSets[0].src.at(-5)) + 1;
-  ctrSets[0].src = `file:///C:/Users/1566260/Desktop/DIG/dig-foundations/foundations/00_saishu/pict/neko-${addNum}.png`;
+  ctrSets[0].src = `neko-${addNum}.png`;
 }
 
 function addButton(clickCount) {
@@ -100,10 +95,10 @@ function endGame(){
     i++;
   }
   if (endText === "GAME CLEAR"){
-    ctrSets[0].src = `file:///C:/Users/1566260/Desktop/DIG/dig-foundations/foundations/00_saishu/pict/end-1-clear.png`;
+    ctrSets[0].src = `end-1-clear.png`;
     yamanekoTexts[0].innerHTML = "「わん、わん、ぐゎあ。」という声がして、あの白熊のような犬が二疋、<br>扉をつきやぶって室の中に飛び込んできました。<br>・・・<br>扉の向うのまっくらやみのなかで、「にゃあお、くゎあ、ごろごろ。」という声がして、それからがさがさ鳴りました。<br>室はけむりのように消え、二人は寒さにぶるぶるふるえて、草の中に立っていました。";
   } else {
-    ctrSets[0].src = `file:///C:/Users/1566260/Desktop/DIG/dig-foundations/foundations/00_saishu/pict/end-2-over.png`;
+    ctrSets[0].src = `end-2-over.png`;
     yamanekoTexts[0].innerHTML = "<font color=red>「　やぁ、うまそうだ。いただきます。　」</font>";
   }
 }
