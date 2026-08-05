@@ -11,7 +11,11 @@ div {
   color: rgb(25, 102, 154);
 }
 
-img.ctrSet {
+.standOutFont {
+  color: red;
+}
+
+img.setImg {
   width: 400px;
 }
 
