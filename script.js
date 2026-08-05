@@ -1,15 +1,11 @@
 "use strict";
 
 function buttonClick() {
-  if(!(clickCount >= 1 && clickCount <= 3) && clickCount !== 3 && clickCount !== 5) {
-    ctrSetImage();
-  }
+  ctrSetImage();
   const titleText = titles[0].innerText;
   titles[0].style.color = "black";
   yamanekoText.innerHTML = yamanekoTextArray[clickCount + 1];
-  
   addButton(clickCount);
-
   clickCount ++;
 }
 function buttonClickA() {
@@ -24,11 +20,8 @@ function buttonClickA() {
     ctrSetImage();
   }
   yamanekoText.innerHTML = yamanekoTextArray[clickCount + 1];
-  
   addButton(clickCount);
-
   clickABArray.push("A");
-
   clickCount ++;
 }
 
@@ -37,14 +30,15 @@ function buttonClickB() {
     ctrSetImage();
   }
   yamanekoText.innerHTML = yamanekoTextArray[clickCount + 1];
-  
   addButton(clickCount);
-
   clickABArray.push("B");
   clickCount ++;
 }
 
 function ctrSetImage() {
+  if (clickCount === 8) {
+    return setImgs[0].src = `neko-6.gif`;
+  }
   let addNum = Number(setImgs[0].src.at(-5)) + 1;
   setImgs[0].src = `neko-${addNum}.png`;
 }
