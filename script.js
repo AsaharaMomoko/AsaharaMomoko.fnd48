@@ -108,6 +108,7 @@ function gameScore(){
   mainTextAreas[0].appendChild(document.createElement("p")).innerHTML = "<font size=5px>正解率　：　" + correctRate + "％</font>";
   mainTextAreas[0].appendChild(document.createElement("p")).innerHTML = "<br>～ あなたの回答 ～";
   mainTextAreas[0].appendChild(document.createElement("p")).innerHTML = yourAnswer;
+  mainTextAreas[0].appendChild(document.createElement("p")).innerHTML = "<br><br><font size=1px color=dimgray>出典：宮沢賢治、「注文の多い料理店」<br>青空文庫（https://www.aozora.gr.jp/）<br><br>出典：「番犬アイコン」「ペンキ跡アイコン１」「ペンキ跡のイラスト２」<br>ICOOON MOMO（https://icooon-mono.com）</font>";
 }
 
 let clickCount = 0;
